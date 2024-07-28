@@ -1,0 +1,194 @@
+body {
+    background-image: url("image/pinkbackground1.jpg");
+    background-color: pink;
+    margin: 2vw;
+    color: white;
+    font-family: "Rokkitt", serif;
+    font-style: normal;
+    font-size: 1.5vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+    font-family: "Rokkitt", serif;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 8vw;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 4%;
+}
+
+h2 {
+    font-size: 5vw;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* to select only <a> elements that are direct children of <nav> elements */
+
+nav>.navigation>a {
+    color: aquamarine;
+    font-size: 2vw;
+    text-decoration: none;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+nav>.navigation>a:hover {
+    font-size: 2.75vw;
+}
+
+
+/* to select only <i> elements that are direct children of <nav> elements */
+
+nav>div>i {
+    font-size: 2vw;
+}
+
+nav>div>a>i {
+    font-size: 2vw;
+    color: white;
+}
+
+article {
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.sub-title {
+    width: 400px;
+}
+
+.items {
+    text-align: center;
+}
+
+.item-center {
+    align-content: center;
+}
+
+.item {
+    width: 275px;
+    padding: 10px;
+    text-align: center;
+}
+
+.item-big {
+    width: 600px;
+    padding: 10px;
+    text-align: center;
+}
+
+.button {
+    background-color: plum;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 50px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.button-skills {
+    font-weight: 600;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 1.75vw;
+    margin: 5px 30px;
+    align-self: center;
+}
+
+.button-cats {
+    font-weight: 600;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 2.5vw;
+    margin: 10px 50px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: plum;
+    font-size: 3vw;
+    font-weight: 900;
+}
+
+footer>div>p>a {
+    color: plum;
+    text-decoration: none;
+}
+
+footer>div {
+    padding: 1vw;
+}
+
+
+/* Small screens */
+
+@media all and (max-width: 1200px) {
+    nav {
+        flex-direction: column;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navigation {
+        flex-direction: column;
+    }
+    .dark-mode {
+        padding-left: 3vw;
+    }
+    .container {
+        flex-direction: column;
+    }
+    /* .sub-title {
+        width: 250px;
+    }
+    .item {
+        width: 150px;
+    }
+    .item-big {
+        width: 310px;
+    } */
+}

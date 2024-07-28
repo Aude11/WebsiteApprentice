@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- JS -->
+    <script src="js.js" charset="utf-8"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Font Awseome icone -->
+    <script src="https://kit.fontawesome.com/8fbd161744.js" crossorigin="anonymous"></script>
+    <!-- SEO -->
+    <title>Meow Meow Meow</title>
+    <meta name="description" content="Full Stack Engineer website and CV">
+    <meta name="keywords" content="Software Enginer, Front End, cat, pink">
+    <meta name="author" content="Aude Vernet">
+
+</head>
+
+<body>
+
+    <nav>
+        <div>
+            <a href="#about"><i class="fa-regular fa-cat" title="Cat Icon"> Meow World</i></a>
+        </div>
+        <div class="navigation">
+            <!-- <i class="fa-regular fa-cat" title="Cat Icon"> Meow World</i> -->
+            <a href="#love">About this website</a>
+            <a href="#software">Cat Software Engineering</a>
+            <a href="circle.html">Another section</a>
+        </div>
+        <div class="dark-mode">
+            <i class="fa-solid fa-moon" title="Dark Mode"></i>
+        </div>
+    </nav>
+
+    <section>
+
+        <header>
+            <h1>Welcome to Meowland</h1>
+        </header>
+
+        <article id="about" class="container">
+            <div class="sub-title">
+                <h2> About me</h2>
+            </div>
+            <div class="item item-center">
+                <h3 class="items">I lack of inspiration</h3>
+            </div>
+            <div class="item">
+                <p>Cats can jump 5 times their own height. Now that’s impressive!</p>
+                <p>Not only do cats have whiskers on their face, they also have a set of whiskers on the back of their front legs.</p>
+                <p>Cats usually sleep around an average of 15 hours PER day.</p>
+            </div>
+            <div class="item">
+                <p>The Fifth Element is the greatest sci-fi movie ever made.</p>
+                <p>The Fifth Element is the greatest sci-fi movie ever made.</p>
+                <p>The Fifth Element is the greatest sci-fi movie ever made.</p>
+            </div>
+        </article>
+
+        <article id="software" class="container">
+            <div class="sub-title">
+                <h2> Software Engineering</h2>
+            </div>
+            <div class="item item-center">
+                <button class="button button-skills" id="button-skill-FE" onclick="getFe()">Front End</button>
+                <p id="remove1">Click to discover</p>
+                <p id="skill1"></p>
+            </div>
+            <div class="item item-center">
+                <button class="button button-skills" id="button-skill-BE" onclick="getBe()">Back End</button>
+                <p id="remove2">Click to discover</p>
+                <p id="skill2"></p>
+            </div>
+            <div class="item item-center ">
+                <button class="button button-skills" id="button-skill-Tool" onclick="getTool()">Tool</button>
+                <p id="remove3">Click to know</p>
+                <div id="skill3"></div>
+            </div>
+        </article>
+
+        <article id="love" class="container">
+            <div class="sub-title">
+                <h2> All I love</h2>
+            </div>
+            <div class="item-big">
+                <img id="cat" src="image/cat1.jpg" alt="Cute cat" style="width:400px;height:500px;">
+            </div>
+            <div class="item item-center">
+                <button class="button button-cats" id="button-cats-swap" onclick="getCat()">Next</button>
+                <p>Click to discover</p>
+            </div>
+        </article>
+
+    </section>
+
+    <footer>
+        <div>
+            <p>Website made for apprenticeship</p>
+        </div>
+        <div>
+            <p>© <span id="datetime"></span> by Aude Vernet</p>
+        </div>
+        <div>
+            <p><a href="https://github.com/Aude11/">GitHub</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
